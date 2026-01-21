@@ -1,0 +1,122 @@
+---
+title: Getting Started with renatkram1352
+description: Set up your account and create your first documentation space in minutes to begin organizing your projects.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A valid email address for account creation
+- Access to a modern web browser like Chrome or Firefox
+- Optional: Node.js installed if using the CLI for file uploads
+
+<Callout kind="info">
+  No credit card required for the free tier. Upgrade later for advanced features.
+</Callout>
+
+## Create Your Account
+
+Follow these steps to sign up and access the dashboard.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="globe">
+    Navigate to `https://dashboard.renatkram1352.com` in your browser.
+  </Step>
+  <Step title="Sign Up" icon="user-plus">
+    Click **Sign Up** and enter your email, name, and a strong password.
+    
+    Verify your email by clicking the link sent to your inbox.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and log in with your credentials.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Documentation spaces organize your project docs. Create one now.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space**.
+  </Step>
+  <Step title="Configure Space" icon="settings">
+    Enter a name like `My Project Docs`, select visibility (`public` or `private`), and choose a starter template.
+  </Step>
+  <Step title="Publish" icon="rocket">
+    Click **Create Space**. Your space is live at `https://docs.renatkram1352.com/my-project-docs`.
+  </Step>
+</Steps>
+
+## Upload Initial Project Files
+
+Add your MDX or Markdown files to populate the space. Choose your preferred method.
+
+<Tabs>
+  <Tab title="Web UI" icon="upload">
+    Drag and drop files into the **Files** tab or click **Upload**.
+    
+    Supported formats: `.mdx`, `.md`, `.yaml`.
+  </Tab>
+  <Tab title="CLI" icon="terminal">
+    Install the CLI and push files.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm install -g @renatkram1352/cli
+    ````
+    ````bash
+    yarn global add @renatkram1352/cli
+    ````
+    </CodeGroup>
+    
+    ````bash
+    renatkram1352 login --email your@email.com
+    renatkram1352 space create --name "My Project Docs"
+    renatkram1352 upload ./docs/*.mdx --space "My Project Docs"
+    ````
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Use the CLI for automation in CI/CD pipelines.
+</Callout>
+
+## Basic Interface Tour
+
+Explore the main dashboard sections.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Write and preview MDX docs with live rendering.
+  </Card>
+  <Card title="Files" icon="file-text" href="#files">
+    Manage uploads, versions, and deletions.
+  </Card>
+  <Card title="Settings" icon="settings" href="#settings">
+    Customize themes, SEO, and integrations.
+  </Card>
+</Columns>
+
+<Image
+  src="https://via.placeholder.com/800x400/3B82F6/white?text=Dashboard+Screenshot"
+  alt="renatkram1352 dashboard interface showing editor and files"
+  width="800"
+  height="400"
+/>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Features" icon="sparkles" href="/configuration">
+    Dive into custom themes and integrations.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  Congratulations! You've set up renatkram1352. Customize your space and invite collaborators next.
+</Callout>
